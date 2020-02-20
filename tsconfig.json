@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": false,
+    "types": [
+      "jest",
+      "node"
+    ],
+    "sourceMap": true,
+    "target": "es6",
+    "baseUrl": "./"
+  },
+  "exclude": [
+    "node_modules",
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "namespace" : "default",
+  "host": "localhost",
+  "port": 3000,
+  "public": "../public/",
+  "mongodb" : {
+    "connectionUrl" : "mongodb://localhost/reporting"
+  },
+  "externalAPIs" : {
+    "buildings" : "https://interview-buildings.herokuapp.com/buildings",
+    "users" : "https://interview-users.herokuapp.com/users"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "r_service",
+  "version": "1.0.0",
+  "description": "My Moleculer microservices project",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js --hot --repl --config moleculer.config.ts services/**/*.service.ts",
+    "cli": "moleculer connect NATS",
+    "start": "moleculer-runner services",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "dc:up": "docker-compose up --build -d",
+    "dc:down": "docker-compose down"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.24",
+    "@types/node": "^10.12.12",
+    "@types/jest": "^23.1.1",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "moleculer-repl": "^0.5.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/agenda": "^2.0.6",
+    "agenda": "^3.0.0",
+    "axios": "^0.19.2",
+    "bluebird": "^3.7.2",
+    "config": "^3.2.5",
+    "cron": "^1.8.2",
+    "ioredis": "^4.2.0",
+    "moleculer": "^0.13.0",
+    "moleculer-db": "^0.8.5",
+    "moleculer-db-adapter-mongoose": "^0.8.3",
+    "moleculer-web": "^0.8.0",
+    "mongoose": "^5.9.1",
+    "nats": "^1.0.1",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "engines": {
+    "node": ">= 8.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "<rootDir>/coverage",
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.spec.(ts|js)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    }
+  }
+}
