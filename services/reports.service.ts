@@ -194,10 +194,10 @@ class ReportsService extends Service {
      * @memberof ReportsService
      */
     async _serviceStarted(){
-        // var job = new CronJob('0 */12 * * *', async () => {
-        //     await this._calculateAvgForAllBuildings();
-        //   });
-        // job.start();
+        var job = new CronJob('0 */12 * * *', async () => {
+            await this._calculateAvgForAllBuildings();
+          });
+        job.start();
         this.logger.info('Service started');
     }
 
