@@ -42,7 +42,7 @@
     "moleculer-web": "^0.8.0",
     "mongoose": "^5.9.1",
     "nats": "^1.0.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   },
