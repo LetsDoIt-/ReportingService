@@ -31,7 +31,7 @@
   "dependencies": {
     "@types/agenda": "^2.0.6",
     "agenda": "^3.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "config": "^3.2.5",
     "cron": "^1.8.2",
